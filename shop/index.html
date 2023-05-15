@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-header">
+            <a href="#" class="nav-brand">Brand Name</a>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="/index.html">Home</a>
+            <a href="#">About</a>
+            <a href="/cart.html">Cart</a>
+        </div>
+    </nav>
+    <div class="search-bar">
+        <button class="filter-button">≡</button>
+        <input type="text" id="search" placeholder="Search products...">
+    </div>
+
+    <div class="content">
+        <aside class="filters" id="filter-panel">
+            <button class="close-button">X Close</button>
+            <fieldset>
+                <legend>Categories</legend>
+                <ul class="category-list">
+                    <li>Category 1</li>
+                    <li>Category 2</li>
+                
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Colors</legend>
+                <div class="color-list">
+                    <div class="color-option" style="background-color: red;"></div>
+                    <div class="color-option" style="background-color: blue;"></div>
+                    
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Price range</legend>
+                <div class="range">
+                  <div class="range-slider">
+                    <span class="range-selected"></span>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                    <input type="range" class="max" min="0" max="1000" value="700" step="10">
+                  </div>
+                  <div class="range-price">      
+                    <label for="min">Min</label>
+                    <input type="number" name="min" value="300">      
+                    <label for="max">Max</label>
+                    <input type="number" name="max" value="700">      
+                  </div>
+                </div>  
+            </fieldset>
+        </aside>
+
+  
+        <div class="product-list">
+
+        </div>
+    </div>
+    
+    <script defer src="products.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>
